@@ -1,12 +1,21 @@
-'#Created by Larry Nkengbeza'
-'#Created in November 2020'
-'#This program calculates circumference of a circle using tau'
+# Created by Larry Nkengbeza
+# Created in November 2020
+# This program calculates circumference of a circle using tau
+
+import constants
 
 
 def main():
-    print("circumference is {}".format(6.28*2))
-    print("circumference is {}".format(6.28*3))
-    print("circumference is {}".format(6.28*8))
+    # This function calculates circumference
+    # Input
+    radius = int(input("Enter radius of the circle(mm): "))
+
+    # Process
+    Circumference = constants.Tau*radius
+
+    # Output
+    print("")
+    print("Circumference is {}mm²".format(Circumference))
 
 
 if __name__ == "__main__":
